@@ -1,27 +1,3 @@
-import prompt
-
-
-#text=f'''Welcome to the Brain Games!
-#Hello, {name}'''
-
-
-
-def greet():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I Have your name?')
-    print(f'''Hello, {name}''')
-
-def main():
-    greet()
-
-if __name__ == "__main__":
-    main()
-
-
-
-
-
-
 import random
 count = 0
 while count < 3:
@@ -45,4 +21,4 @@ while count < 3:
         print("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}")
         count = 0
         continue
-print('Congratulations, {name}!')
+print('Congratulations, {}!')

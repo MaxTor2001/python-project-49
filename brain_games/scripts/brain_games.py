@@ -1,19 +1,7 @@
-import prompt
-
-
-#text=f'''Welcome to the Brain Games!
-#Hello, {name}'''
-
-
-
-def greet():
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I Have your name?')
-    print(f'''Hello, {name}''')
+from brain_games.cli import welcome_user
 
 def main():
-    greet()
+    welcome_user()
 
 if __name__ == "__main__":
     main()
-
