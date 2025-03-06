@@ -1,3 +1,27 @@
+import prompt
+
+
+#text=f'''Welcome to the Brain Games!
+#Hello, {name}'''
+
+
+
+def greet():
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I Have your name?')
+    print(f'''Hello, {name}''')
+
+def main():
+    greet()
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
 import random
 count = 0
 while count < 3:
@@ -14,11 +38,11 @@ while count < 3:
         print('Correct!')
         count += 1
     if answer == 'yes' and array_of_numbers % 2 != 0:
-        print("'yes' is wrong answer ;(. Correct answer was 'no'.")
+        print("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}")
         count = 0
         continue
     if answer == 'no' and array_of_numbers % 2 == 0:
-        print("'no' is wrong answer ;(. Correct answer was 'yes'.")
+        print("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}")
         count = 0
         continue
 print('Congratulations, {name}!')
