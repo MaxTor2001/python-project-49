@@ -21,4 +21,4 @@ while count < 3:
         print("'no' is wrong answer ;(. Correct answer was 'yes'.")
         count = 0
         continue
-print('Congratulations, Bill!')
+print('Congratulations, {name}!')
