@@ -19,13 +19,13 @@ def welcome_user():
             print('Correct!')
             count += 1
         if answer == 'yes' and array_of_numbers % 2 != 0:
-            print("'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}")
+            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}")
             count = 0
             continue
         if answer == 'no' and array_of_numbers % 2 == 0:
-            print("'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}")
+            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}")
             count = 0
             continue
-    print('Congratulations, {name}!')
+    print(f"Congratulations, {name}!")
 
 welcome_user()
