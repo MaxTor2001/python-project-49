@@ -2,7 +2,7 @@ import random
 import operator
 
 def welcome_user():
-    name = input("May I have your name? ")
+    name = input("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
 
 
