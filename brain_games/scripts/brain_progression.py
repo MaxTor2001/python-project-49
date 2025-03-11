@@ -28,7 +28,7 @@ def welcome_user():
 
         while True:
             try:
-                user_answer = float(input(f"What number is missing in the progression?\nQuestion: "))
+                user_answer = float(input("What number is missing in the progression?\nQuestion: "))
                 break
             except ValueError:
                 print('Incorrect input. Please enter "numbers".')
