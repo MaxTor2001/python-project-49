@@ -7,7 +7,7 @@ def welcome_user():
     count = 0
     while count < 3:
         array_of_numbers = random.randint(0,1000)
-        print('Answer "yes" if the number is even, otherwise answer "no"')
+        print('Answer "yes" if the number is even, otherwise answer "no".')
         print('Question:', array_of_numbers)
         answer = str(input('Your answer: ')).lower()
 #        while True:
