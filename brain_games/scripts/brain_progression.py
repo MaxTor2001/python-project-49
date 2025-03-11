@@ -37,6 +37,7 @@ def welcome_user():
             count += 1
         else:
             print(f"{user_answer} is wrong answer ;(. Correct answer is {hide1}.\nLets's try again {name}!")
+            count = 0
     print(f"Congratulation, {name}!")
 
 welcome_user()
