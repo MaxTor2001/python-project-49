@@ -6,29 +6,26 @@ def welcome_user():
 
     count = 0
     while count < 3:
-        # Generate a random number
-        number = random.randint(0, 1000)
+        array_of_numbers = random.randint(0,1000)
         print('Answer "yes" if the number is even, otherwise answer "no".')
-        print('Question:', number)
-        
-        # Validate user input
+        print('Question:', array_of_numbers)
         while True:
-            answer = input('Your answer: ').lower()
-            if answer in ['yes', 'no']:
+            answer = str(input('Your answer: ')).lower()
+            if answer == 'yes' or answer == 'no':
                 break
             else:
                 print('Incorrect input. Please enter "yes" or "no".')
-
-        # Check if the answer is correct
-        if (answer == 'yes' and number % 2 == 0) or (answer == 'no' and number % 2 != 0):
+        if answer == 'yes' and array_of_numbers % 2 == 0 or answer == 'no' and array_of_numbers % 2 !=0:
             print('Correct!')
             count += 1
-        else:
-            # Handle incorrect answers
-            correct_answer = 'yes' if number % 2 == 0 else 'no'
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}")
+        if answer == 'yes' and array_of_numbers % 2 != 0:
+            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}")
             count = 0
-
+            continue
+        if answer == 'no' and array_of_numbers % 2 == 0:
+            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}")
+            count = 0
+            continue
     print(f"Congratulations, {name}!")
 
 welcome_user()
