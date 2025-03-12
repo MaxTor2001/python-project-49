@@ -4,23 +4,27 @@ def welcome_user():
     name = input("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
+
     count = 0
     while count < 3:
-        array_of_numbers = random.randint(0,1000)
-        print('Question:', array_of_numbers)
+        number = random.randint(0, 1000)
+        print('Question:', number)
+        
         while True:
-            answer = str(input('Your answer: ')).lower()
-            if answer == 'yes' or answer == 'no':
+            answer = input('Your answer: ').lower()
+            if answer in ['yes', 'no']:
                 break
             else:
                 print('Incorrect input. Please enter "yes" or "no".')
-        if answer == 'yes' and array_of_numbers % 2 == 0 or answer == 'no' and array_of_numbers % 2 !=0:
+
+        if (answer == 'yes' and number % 2 == 0) or (answer == 'no' and number % 2 != 0):
             print('Correct!')
             count += 1
-        if answer == 'yes' and array_of_numbers % 2 != 0:
-            print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}")
-            count = 0
-            continue
+        else:
+            correct_answer = 'yes' if number % 2 == 0 else 'no'
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}")
+            count = 0 
+
     print(f"Congratulations, {name}!")
 
 welcome_user()
