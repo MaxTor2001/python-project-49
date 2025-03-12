@@ -1,7 +1,7 @@
-from brain_games.games import even
+from brain_games.games import even1
 
 def main():
-    even
+    even1
 
 if __name__ == "__main__":
     main()
