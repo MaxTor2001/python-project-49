@@ -9,7 +9,6 @@ def welcome_user():
         array_of_numbers = random.randint(0,1000)
         print('Answer "yes" if the number is even, otherwise answer "no".')
         print('Question:', array_of_numbers)
-        answer = str(input('Your answer: ')).lower()
         while True:
             answer = str(input('Your answer: ')).lower()
             if answer == 'yes' or answer == 'no':
