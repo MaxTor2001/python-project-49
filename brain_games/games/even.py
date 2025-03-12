@@ -21,10 +21,6 @@ def welcome_user():
             print(f"'yes' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}")
             count = 0
             continue
-        if answer == 'no' and array_of_numbers % 2 == 0:
-            print(f"'no' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}")
-            count = 0
-            continue
     print(f"Congratulations, {name}!")
 
 welcome_user()
