@@ -3,11 +3,10 @@ import random
 def welcome_user():
     name = input("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
-
+    print('Answer "yes" if the number is even, otherwise answer "no".')
     count = 0
     while count < 3:
         array_of_numbers = random.randint(0,1000)
-        print('Answer "yes" if the number is even, otherwise answer "no".')
         print('Question:', array_of_numbers)
         while True:
             answer = str(input('Your answer: ')).lower()
