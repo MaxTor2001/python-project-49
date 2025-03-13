@@ -12,7 +12,11 @@ def welcome_user():
         right_answer = math.gcd(number_1, number_2)
         while True:
             try:
-                user_answer = float(input(f"Find the greatest common divisor of given numbers.\nQuestion: {number_1} {number_2} "))
+                question = (
+                    f"Find the greatest common divisor of given numbers.\n"
+                    f"Question: {number_1} {number_2} "
+                )
+                user_answer = float(input(question))
                 break
             except ValueError:
                 print('Incorrect input. Please enter "number".')
@@ -20,7 +24,10 @@ def welcome_user():
             print("Correct!")
             count += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer is '{right_answer}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer is '{right_answer}'."
+            )
             print(f"Let's try again, {name}!")
             break
 

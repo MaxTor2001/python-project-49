@@ -18,12 +18,19 @@ def welcome_user():
             else:
                 print('Incorrect input. Please enter "yes" or "no".')
 
-        if (answer == 'yes' and number % 2 == 0) or (answer == 'no' and number % 2 != 0):
+        if (
+            (answer == 'yes' and number % 2 == 0)
+            or 
+            (answer == 'no' and number % 2 != 0)
+        ):
             print('Correct!')
             count += 1
         else:
             correct_answer = 'yes' if number % 2 == 0 else 'no'
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(
+                f"'{answer}' is wrong answer ;(. "
+                f"Correct answer was '{correct_answer}'."
+                )
             print(f"Let's try again, {name}!")
             break
         

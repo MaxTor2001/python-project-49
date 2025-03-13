@@ -19,7 +19,8 @@ def welcome_user():
         
         while True:
             try:
-                user_answer = float(input(f"Question: {number_1} {rand} {number_2}? "))
+                question = f"Question: {number_1} {rand} {number_2}"
+                user_answer = float(input(question))
                 break
             except ValueError:
                 print('Incorrect input. Please enter "number".')
