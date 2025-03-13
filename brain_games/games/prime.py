@@ -1,7 +1,7 @@
 import random
 
+
 def is_prime(n):
-    """Check if a number is prime."""
     if n <= 1:
         return False
     for i in range(2, int(n**0.5) + 1):
@@ -9,8 +9,8 @@ def is_prime(n):
             return False
     return True
 
+
 def get_user_answer(number):
-    """Get the user's answer and validate it."""
     while True:
         prompt = (
             f'Answer "yes" if given number is prime. Otherwise answer "no".\n'
@@ -22,8 +22,8 @@ def get_user_answer(number):
         else:
             print('Incorrect input. Please enter "yes" or "no".')
 
+
 def check_answer(number, user_answer):
-    """Check if the user's answer is correct."""
     if is_prime(number) and user_answer == 'yes':
         print("Correct!")
         return True
@@ -37,8 +37,8 @@ def check_answer(number, user_answer):
         print("Correct!")
         return True
 
+
 def welcome_user():
-    """Welcome the user and start the game."""
     name = input("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
     count = 0
@@ -52,5 +52,6 @@ def welcome_user():
             break
     if count == 3:
         print(f"Congratulations, {name}!")
+
 
 welcome_user()
