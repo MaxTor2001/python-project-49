@@ -20,7 +20,7 @@ def welcome_user():
             count += 1
         else:
             print(f"{user_answer} is wrong answer ;(. Correct answer is '{right_answer}'.")
-            print(f"Let's try again {name}!")
+            print(f"Let's try again, {name}!")
             break
 
     if count == 3:
