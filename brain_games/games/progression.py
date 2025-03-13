@@ -28,8 +28,8 @@ def welcome_user():
         
         while True:
             prompt = (
-                "What number is missing in the progression?\n"prompt
-                f"Question: {result} \n"property
+                "What number is missing in the progression?\n"
+                f"Question: {result} \n"
                 "Your answer: "
             )
             try:
