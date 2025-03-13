@@ -5,6 +5,8 @@ def welcome_user():
     print(f"Hello, {name}!")
 
     count = 0
+
+
     while count < 3:
         number = random.randint(2, 3571)
 
@@ -20,23 +22,28 @@ def welcome_user():
             user_answer = str(input(f'Answer "yes" if given number is prime. Otherwise answer "no".\nQuestion: {number}?'))
             if user_answer == 'yes' or user_answer == 'no':
                 break
+            
             else:
                 print('Incorrect input. Please enter "yes" or "no".')
 
         if is_prime(number) and user_answer == 'yes':
             print("Correct!")
             count += 1
+
         elif is_prime(number) and user_answer == 'no':
             print ("'no' is wrong answer ;(. Correct answer was 'yes'.)")
             print(f"Let's try again, {name}!")
             break
+
         elif not is_prime(number) and user_answer == 'yes':
             print ("'yes' is wrong answer ;(. Correct answer was 'no'.)")
             print(f"Let's try again, {name}!")
             break
+
         else:
             print("Correct!")
             count += 1
+
     if count == 3:
         print(f"Congratulations, {name}!")
 
