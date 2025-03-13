@@ -4,9 +4,7 @@ import random
 def welcome_user():
     name = input("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
-
     count = 0
-
     while count < 3:
         number = random.randint(2, 3571)
 
@@ -19,7 +17,10 @@ def welcome_user():
             return True
         
         while True:
-            user_answer = str(input(f'Answer "yes" if given number is prime. Otherwise answer "no".\nQuestion: {number}?'))
+            user_answer = str(input(
+                f'Answer "yes" if given number is prime. Otherwise answer "no".\n'
+                f'Question: {number}? '
+            ))
             if user_answer == 'yes' or user_answer == 'no':
                 break
             

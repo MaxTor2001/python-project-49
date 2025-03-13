@@ -27,8 +27,9 @@ def welcome_user():
         result = ' '.join(hidden_numbers)
         
         while True:
+            prompt = f"What number is missing in the progression?\nQuestion: {result} \nYour answer: "
             try:
-                user_answer = float(input(f"What number is missing in the progression?\nQuestion: {result} \nYour answer: "))
+                user_answer = float(input(prompt))
                 break
             except ValueError:
                 print('Incorrect input. Please enter "numbers".')
@@ -36,7 +37,10 @@ def welcome_user():
             print("Correct!")
             count += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer is '{hide1}'.")
+            print(
+                f"'{user_answer}' is wrong answer ;(. "
+                f"Correct answer is '{hide1}'."
+            )
             print(f"Let's try again, {name}!")
             break
 
