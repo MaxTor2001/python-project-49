@@ -23,7 +23,7 @@ def welcome_user():
             else:
                 hidden_numbers.append(str(i))
 
-        result = ', '.join(hidden_numbers)
+        result = ' '.join(hidden_numbers)
         
         while True:
             try:
