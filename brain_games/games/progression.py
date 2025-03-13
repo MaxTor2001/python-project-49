@@ -24,11 +24,10 @@ def welcome_user():
                 hidden_numbers.append(str(i))
 
         result = ', '.join(hidden_numbers)
-        print(result)
-
+        
         while True:
             try:
-                user_answer = float(input("What number is missing in the progression?\nQuestion: "))
+                user_answer = float(input(f"What number is missing in the progression?\nQuestion: {result} \nYour answer: "))
                 break
             except ValueError:
                 print('Incorrect input. Please enter "numbers".')
