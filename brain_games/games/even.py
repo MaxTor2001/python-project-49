@@ -22,9 +22,10 @@ def welcome_user():
             count += 1
         else:
             correct_answer = 'yes' if number % 2 == 0 else 'no'
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.\nLet's try again, {name}")
-            count = 0 
-
-    print(f"Congratulations, {name}!")
+            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {name}")
+            break
+    if count == 3:      
+        print(f"Congratulations, {name}!")
 
 welcome_user()
