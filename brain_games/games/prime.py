@@ -19,7 +19,8 @@ def welcome_user():
         while True:
             prompt = (
                 f'Answer "yes" if given number is prime. Otherwise answer "no".\n'
-                f'Question: {number}? '
+                f'Question: '
+                f'{number}? '
             )
             user_answer = str(input(prompt))
             if user_answer == 'yes' or user_answer == 'no':
