@@ -23,8 +23,11 @@ def welcome_user():
             print("Correct!")
             count += 1
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer is {answer}.\nLet's try again {name}!")
-            count = 0
-    print(f"Congratulations, {name}!")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer is '{answer}'.")
+            print(f"Let's try again {name}!")
+            break
+
+    if count == 3:
+        print(f"Congratulations, {name}!")
 
 welcome_user()

@@ -28,13 +28,14 @@ def welcome_user():
             count += 1
         elif is_prime(number) and user_answer == 'no':
             print ("'no' is wrong answer ;(. Correct answer was 'yes'.)")
-            count = 0
+            break
         elif not is_prime(number) and user_answer == 'yes':
             print ("'yes' is wrong answer ;(. Correct answer was 'no'.)")
-            count = 0
+            break
         else:
             print("Correct!")
             count += 1
-    print(f"Congratulations, {name}!")
+    if count == 3:
+        print(f"Congratulations, {name}!")
 
 welcome_user()
