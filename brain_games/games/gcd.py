@@ -1,13 +1,14 @@
-import random
 import math
+import random
+
 
 def welcome_user():
     name = input("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
     count = 0
     while count < 3:
-        number_1 = random.randint(0,100)
-        number_2 = random.randint(0,100)
+        number_1 = random.randint(0, 100)
+        number_2 = random.randint(0, 100)
         right_answer = math.gcd(number_1, number_2)
         while True:
             try:
@@ -25,5 +26,6 @@ def welcome_user():
 
     if count == 3:
         print(f"Congratulations, {name}!")
+
 
 welcome_user()

@@ -1,5 +1,6 @@
 import random
 
+
 def welcome_user():
     name = input("May I have your name? ")
     print(f"Hello, {name}!")
@@ -8,7 +9,7 @@ def welcome_user():
         while True:
             start = random.randint(0, 48)
             stop = random.randint(59, 99)
-            step = random.randint(3,10)
+            step = random.randint(3, 10)
             numbers = list(range(start, stop, step))
             if len(numbers) >= 10:
                 break
@@ -41,5 +42,6 @@ def welcome_user():
 
     if count == 3:
         print(f"Congratulations, {name}!")
+
 
 welcome_user()

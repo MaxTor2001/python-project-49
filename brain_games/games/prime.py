@@ -1,11 +1,11 @@
 import random
 
+
 def welcome_user():
     name = input("Welcome to the Brain Games!\nMay I have your name? ")
     print(f"Hello, {name}!")
 
     count = 0
-
 
     while count < 3:
         number = random.randint(2, 3571)
@@ -13,7 +13,7 @@ def welcome_user():
         def is_prime(n):
             if n <= 1:
                 return False
-            for i in range(2, int(n**0.5) +1):
+            for i in range(2, int(n**0.5) + 1):
                 if n % i == 0:
                     return False
             return True
@@ -31,12 +31,12 @@ def welcome_user():
             count += 1
 
         elif is_prime(number) and user_answer == 'no':
-            print ("'no' is wrong answer ;(. Correct answer was 'yes'.)")
+            print("'no' is wrong answer ;(. Correct answer was 'yes'.)")
             print(f"Let's try again, {name}!")
             break
 
         elif not is_prime(number) and user_answer == 'yes':
-            print ("'yes' is wrong answer ;(. Correct answer was 'no'.)")
+            print("'yes' is wrong answer ;(. Correct answer was 'no'.)")
             print(f"Let's try again, {name}!")
             break
 
@@ -46,5 +46,6 @@ def welcome_user():
 
     if count == 3:
         print(f"Congratulations, {name}!")
+
 
 welcome_user()
