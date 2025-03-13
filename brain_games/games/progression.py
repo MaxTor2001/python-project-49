@@ -40,6 +40,6 @@ def welcome_user():
             break
 
     if count == 3:
-        print(f"Congratulation, {name}!")
+        print(f"Congratulations, {name}!")
 
 welcome_user()
