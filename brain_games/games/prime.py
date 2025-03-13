@@ -17,10 +17,11 @@ def welcome_user():
             return True
         
         while True:
-            user_answer = str(input(
+            prompt = (
                 f'Answer "yes" if given number is prime. Otherwise answer "no".\n'
                 f'Question: {number}? '
-            ))
+            )
+            user_answer = str(input(prompt))
             if user_answer == 'yes' or user_answer == 'no':
                 break
             

@@ -27,7 +27,11 @@ def welcome_user():
         result = ' '.join(hidden_numbers)
         
         while True:
-            prompt = f"What number is missing in the progression?\nQuestion: {result} \nYour answer: "
+            prompt = (
+                "What number is missing in the progression?\n"prompt
+                f"Question: {result} \n"property
+                "Your answer: "
+            )
             try:
                 user_answer = float(input(prompt))
                 break
