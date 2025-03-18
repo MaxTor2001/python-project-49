@@ -36,3 +36,4 @@ To start the game run:
 
 ASCIINEMA:
 
+brain-even:[![asciicast](https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga.svg)](https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga)
