@@ -1,5 +1,7 @@
 import random
 
+DESCRIPTION = 'nswer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def is_prime(n):
     if n <= 1:
@@ -36,22 +38,3 @@ def check_answer(number, user_answer):
     else:
         print("Correct!")
         return True
-
-
-def welcome_user():
-    name = input("Welcome to the Brain Games!\nMay I have your name? ")
-    print(f"Hello, {name}!")
-    count = 0
-    while count < 3:
-        number = random.randint(2, 3571)
-        user_answer = get_user_answer(number)
-        if check_answer(number, user_answer):
-            count += 1
-        else:
-            print(f"Let's try again, {name}!")
-            break
-    if count == 3:
-        print(f"Congratulations, {name}!")
-
-
-welcome_user()
