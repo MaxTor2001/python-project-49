@@ -24,6 +24,3 @@ def generate_question_and_answer():
     progression = ' '.join(map(str, progression))
     question = f'{progression}'
     return question, str(correct_answer)
-
-if count == 3:
-    print(f"Congratulations, {name}!")
