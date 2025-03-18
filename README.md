@@ -27,13 +27,17 @@ To start the game run:
 3. The NODE game. "Greatest Common Divisor (GCD)". The essence of the game is as follows: the user is shown two random numbers. The user must calculate and enter the largest common divisor of these numbers.
 To start the game run: 
 - brain-gcd
-4. The game "Arithmetic progression". We show the player a series of numbers that forms an arithmetic progression by replacing any of the numbers with two dots. The player must determine this number.
-To start the game run: 
-- brain-prime
-5. The game "Is a prime number?" The game shows a random number, the user needs to determine whether it is prime and answer yes if the number is prime, or no if not.
+4. The game "Is a prime number?" The game shows a random number, the user needs to determine whether it is prime and answer yes if the number is prime, or no if not.
 To start the game run: 
 - brain-progression
+5. The game "Arithmetic progression". We show the player a series of numbers that forms an arithmetic progression by replacing any of the numbers with two dots. The player must determine this number.
+To start the game run: 
+- brain-prime
 
 ASCIINEMA:
 
 brain-even:[![asciicast](https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga.svg)](https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga)
+brain-calc:[![asciicast](https://asciinema.org/a/BGB6x83eDp6zDnp2GV4fcJlt6)](https://asciinema.org/a/BGB6x83eDp6zDnp2GV4fcJlt6)
+brain-gcd:[![asciicast](https://asciinema.org/a/FKt0paXJSRX3HxfkBOh724GDI)](https://asciinema.org/a/FKt0paXJSRX3HxfkBOh724GDI)
+brain-progression:[![asciicast](https://asciinema.org/a/g0Cwl9Rfy2S8xlCGwDtiPOSx3)](https://asciinema.org/a/g0Cwl9Rfy2S8xlCGwDtiPOSx3)
+brain-prime: [![asciicast](https://asciinema.org/a/8iDI426OeLADrjD2joEIF3plZ)](https://asciinema.org/a/8iDI426OeLADrjD2joEIF3plZ)
