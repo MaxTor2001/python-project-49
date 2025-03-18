@@ -1,51 +1,29 @@
-import random
+from random import randint
+
 
 DESCRIPTION = 'What number is missing in the progression?'
+START = 1
+STOP = 50
+STEP_START = 3
+STEP_STOP = 10
+PROGRESSION_LENGTH_START = 5
+PROGRESSION_LENGTH_STOP = 10
 
 
-count = 0
-while count < 3:
-    while True:
-        start = random.randint(0, 48)
-        stop = random.randint(59, 99)
-        step = random.randint(3, 10)
-        numbers = list(range(start, stop, step))
-        if len(numbers) >= 10:
-            break
-    
-    hide_index = random.randint(0, len(numbers) - 1)
-    hide1 = numbers[hide_index]
-    hidden_numbers = []
+def generate_question_and_answer():
 
-    for i in range(start, stop, step):
-        if i == hide1:
-            hidden_numbers.append('..')
-        else:
-            hidden_numbers.append(str(i))
-
-    result = ' '.join(hidden_numbers)
-    
-    while True:
-        prompt = (
-            "What number is missing in the progression?\n"
-            f"Question: {result} \n"
-            "Your answer: "
-        )
-        try:
-            user_answer = float(input(prompt))
-            break
-        except ValueError:
-            print('Incorrect input. Please enter "numbers".')
-    if abs(user_answer - hide1) == 0:
-        print("Correct!")
-        count += 1
-    else:
-        print(
-            f"'{user_answer}' is wrong answer ;(. "
-            f"Correct answer is '{hide1}'."
-        )
-        print(f"Let's try again, {name}!")
-        break
+    progression = []
+    number = randint(START, STOP)
+    step = randint(STEP_START, STEP_STOP)
+    for _ in range(randint(PROGRESSION_LENGTH_START, PROGRESSION_LENGTH_STOP)):
+        progression.append(number)
+        number = number + step
+    correct_answer = progression[randint(0, len(progression) - 1)]
+    correct_answer_index = progression.index(correct_answer)
+    progression[correct_answer_index] = '..'
+    progression = ' '.join(map(str, progression))
+    question = f'{progression}'
+    return question, str(correct_answer)
 
 if count == 3:
     print(f"Congratulations, {name}!")
