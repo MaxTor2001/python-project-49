@@ -38,12 +38,18 @@ To start the game run:
 
 ASCIINEMA:
 
-brain-even: [![asciicast](https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga.svg)](https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga)
+brain-even: [![asciicast][def4]](https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga)
 
-brain-calc: [![asciicast](https://asciinema.org/a/BGB6x83eDp6zDnp2GV4fcJlt6)](https://asciinema.org/a/BGB6x83eDp6zDnp2GV4fcJlt6)
+brain-calc: [![asciicast][def5]][def5]
 
-brain-gcd: [![asciicast](https://asciinema.org/a/FKt0paXJSRX3HxfkBOh724GDI)](https://asciinema.org/a/FKt0paXJSRX3HxfkBOh724GDI)
+brain-gcd: [![asciicast][def3]][def3]
 
-brain-progression: [![asciicast](https://asciinema.org/a/g0Cwl9Rfy2S8xlCGwDtiPOSx3)](https://asciinema.org/a/g0Cwl9Rfy2S8xlCGwDtiPOSx3)
+brain-progression: [![asciicast][def2]][def2]
 
-brain-prime: [![asciicast](https://asciinema.org/a/8iDI426OeLADrjD2joEIF3plZ)](https://asciinema.org/a/8iDI426OeLADrjD2joEIF3plZ)
+brain-prime: [![asciicast][def]][def]
+
+[def]: https://asciinema.org/a/8iDI426OeLADrjD2joEIF3plZ
+[def2]: https://asciinema.org/a/g0Cwl9Rfy2S8xlCGwDtiPOSx3
+[def3]: https://asciinema.org/a/FKt0paXJSRX3HxfkBOh724GDI
+[def4]: https://asciinema.org/a/rok2pwHVEWa8CgUWlsZGw18ga.svg
+[def5]: https://asciinema.org/a/BGB6x83eDp6zDnp2GV4fcJlt6
