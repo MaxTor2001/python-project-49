@@ -1,37 +1,27 @@
-import random
+from random import randint
+
 
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+START = 1
+STOP = 100
 
 
-count = 0
-while count < 3:
-    number = random.randint(0, 1000)
-    print('Question:', number)
-    
-    while True:
-        user_answer = input('Your answer: ').lower()
-        if user_answer in ['yes', 'no']:
-            break
+def generate_question_and_answer():
+
+    def is_even(number):
+        if number % 2 == 0:
+            return True
         else:
-            print('Incorrect input. Please enter "yes" or "no".')
+            return False
 
-    if (
-        (user_answer == 'yes' and number % 2 == 0)
-        or 
-        (user_answer == 'no' and number % 2 != 0)
-    ):
-        print('Correct!')
-        count += 1
+    number = randint(START, STOP)
+    question = f'{number}'
+
+    if is_even(number):
+        correct_answer = 'yes'
     else:
-        right_answer = 'yes' if number % 2 == 0 else 'no'
-        print(
-            f"'{answer}' is wrong answer ;(. "
-            f"Correct answer was '{right_answer}'."
-            )
-        print(f"Let's try again, {name}!")
-        break
-    
-if count == 3:      
-    print(f"Congratulations, {name}!")
+        correct_answer = 'no'
+
+    return question, correct_answer
 
 

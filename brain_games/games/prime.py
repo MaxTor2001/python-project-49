@@ -1,40 +1,26 @@
-import random
-
-DESCRIPTION = 'nswer "yes" if given number is prime. Otherwise answer "no".'
+from random import randint
 
 
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n**0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+DESCRIPTION = 'What number is missing in the progression?'
+START = 1
+STOP = 50
+STEP_START = 3
+STEP_STOP = 10
+PROGRESSION_LENGTH_START = 5
+PROGRESSION_LENGTH_STOP = 10
 
 
-def get_user_answer(number):
-    while True:
-        prompt = (
-            f'Answer "yes" if given number is prime. Otherwise answer "no".\n'
-            f'Question: {number}? '
-        )
-        user_answer = str(input(prompt))
-        if user_answer == 'yes' or user_answer == 'no':
-            return user_answer
-        else:
-            print('Incorrect input. Please enter "yes" or "no".')
+def generate_question_and_answer():
 
-
-def check_answer(number, user_answer):
-    if is_prime(number) and user_answer == 'yes':
-        print("Correct!")
-        return True
-    elif is_prime(number) and user_answer == 'no':
-        print("'no' is wrong answer ;(. Correct answer was 'yes'.)")
-        return False
-    elif not is_prime(number) and user_answer == 'yes':
-        print("'yes' is wrong answer ;(. Correct answer was 'no'.)")
-        return False
-    else:
-        print("Correct!")
-        return True
+    progression = []
+    number = randint(START, STOP)
+    step = randint(STEP_START, STEP_STOP)
+    for _ in range(randint(PROGRESSION_LENGTH_START, PROGRESSION_LENGTH_STOP)):
+        progression.append(number)
+        number = number + step
+    correct_answer = progression[randint(0, len(progression) - 1)]
+    correct_answer_index = progression.index(correct_answer)
+    progression[correct_answer_index] = '..'
+    progression = ' '.join(map(str, progression))
+    question = f'{progression}'
+    return question, str(correct_answer)
