@@ -3,8 +3,7 @@ from random import randint
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 START = 1
 STOP = 100
-number = randint(START, STOP)\
-
+number = randint(START, STOP)
 
 
 def generate_question_and_answer():
