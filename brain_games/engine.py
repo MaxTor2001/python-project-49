@@ -10,7 +10,7 @@ def main():
 ROUNDS = 3
 
 
-def play(game_module):
+def play(game_module, name):
     print(game_module.DESCRIPTION)
 
     for _ in range(ROUNDS):
