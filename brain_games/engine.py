@@ -6,7 +6,7 @@ ROUNDS = 3
 
 
 def play(game_module):
-    welcome_user()
+    name = welcome_user()
     print(game_module.DESCRIPTION)
 
     for _ in range(ROUNDS):
@@ -23,3 +23,4 @@ def play(game_module):
                   f"\nLet's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
+    return
