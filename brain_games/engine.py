@@ -7,6 +7,8 @@ ROUNDS = 3
 
 def play(game_module):
     name = welcome_user()
+    if name is None:
+        name = prompt.string('May I have your name? ')
     print(game_module.DESCRIPTION)
 
     for _ in range(ROUNDS):
