@@ -1,7 +1,6 @@
-from random import randint, choice
+from random import choice, randint
 
 DESCRIPTION = 'What is the result of the expression?'
-
 
 
 def generate_question_and_answer():
