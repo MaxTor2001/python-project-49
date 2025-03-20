@@ -1,7 +1,14 @@
 import prompt
+
 from brain_games.cli import welcome_user
 
+def main():
+
+    print('Welcome to the Brain Games!')
+    welcome_user()
+
 ROUNDS = 3
+
 
 def play(game_module):
     print(game_module.DESCRIPTION)
@@ -20,11 +27,6 @@ def play(game_module):
                   f"\nLet's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
-
-def main():
-
-    print('Welcome to the Brain Games!')
-    welcome_user()
 
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 START = 1
 STOP = 100
 
- def is_even(number):
+def is_even(number):
     if number % 2 == 0:
         return True
     else:
