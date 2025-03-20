@@ -1,15 +1,12 @@
 from random import randint
 
-
+# Game constants
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 START = 1
 STOP = 100
 
 def is_even(number):
-    if number % 2 == 0:
-        return True
-    else:
-        return False
+    return number % 2 == 0
 
 def generate_question_and_answer():
     number = randint(START, STOP)
