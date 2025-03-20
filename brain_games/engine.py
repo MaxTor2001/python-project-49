@@ -6,7 +6,7 @@ ROUNDS = 3
 
 
 def play(game_module):
-    welcome_user(game_module)
+    name = welcome_user(game_module)
     print(game_module.DESCRIPTION)
 
     for _ in range(ROUNDS):
