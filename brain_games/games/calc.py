@@ -1,6 +1,7 @@
-from random import choice, randint
+from random import randint, choice
 
 DESCRIPTION = 'What is the result of the expression?'
+
 
 
 def generate_question_and_answer():
@@ -16,4 +17,3 @@ def generate_question_and_answer():
     elif operation == '*':
         correct_answer = num_1 * num_2
     return question, str(correct_answer)
-
