@@ -4,7 +4,7 @@ import prompt
 ROUNDS = 3
 
 
-def play(game_module, name):
+def play(game_module):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}')
@@ -24,5 +24,3 @@ def play(game_module, name):
                   f"\nLet's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
-
-
